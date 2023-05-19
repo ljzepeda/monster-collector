@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Type List</h1>
+
+{% for type in type_list %}
+  <a href="{% url 'types_detail' type.id %}">
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">{{ type.name }}</span>
+            <p>Weakness: {{ type.weakness }}</p>
+        </div>
+    </div>
+  </a>
+{% endfor %}
+
+{% endblock %}

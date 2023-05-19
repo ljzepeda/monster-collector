@@ -1,0 +1,2 @@
+# Monster-Collector
+Django App
